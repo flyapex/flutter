@@ -1424,7 +1424,7 @@ class RenderViewport extends RenderViewportBase<SliverPhysicalContainerParentDat
         switch (axis) {
           case Axis.vertical:
             if (!constraints.hasBoundedHeight) {
-              throw FlutterError.fromParts(<DiagnosticsNode>[
+              sthrow FlutterError.fromParts(<DiagnosticsNode>[
                 ErrorSummary('Vertical viewport was given unbounded height.'),
                 ErrorDescription(
                   'Viewports expand in the scrolling direction to fill their container. '
